@@ -5,27 +5,16 @@
         <title>redis key操作</title>
         <link rel="stylesheet" href="/static/bootstrap-3.3.7/dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="/static/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css"/>
-        <style type="text/css">
-            body {
-                 padding-left: 3px;
-                 padding-top: 0px;
-            }
-            table {
-                background-color: lavender;
-                margin-top: 10px;
-            }
-        </style>
         <script src="/static/js/jquery-3.4.1.js"></script>
         <script src="/static/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
         <script type="text/javascript">
             $(document).ready(function (){
                 $("#delBtn").click(function(){
-                    if($("#key").val() == "" || $.trim($("#key").val()).length == 0){
+                    if ($("#key").val() == "" || $.trim($("#key").val()).length == 0){
                         $("#msg").html("key不能为空!");
                         return false;
                     }
                     $("#flag").val("0");
-                    $(this).hide();
                 });
             });
         </script>
@@ -33,7 +22,14 @@
     <body>
         <div class="container-fluid">
             <div class="row top">
-                    <h1>redis key (253)</h1>
+                <nav class="navbar navbar-default">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Redis工具</a></li>
+                        <li><a href="#">MySQL工具</a></li>
+                        <li><a href="#">LOG工具</a></li>
+                        <li><a href="#">MongDB工具</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="row">
                 <form id="redisForm" action="{% url 'queryKey' %}" method="post" class="form-inline">
@@ -49,8 +45,8 @@
                 </form>
             </div>
             <div class="row">
-                <table class="table table-striped" >
-                    <thead><tr><th>keys</th></tr></thead>
+                <table class="table table-striped" style="margin-top: 10px;">
+                    <thead><tr><th>result:</th></tr></thead>
                     <tbody>
                     {% if redis_keys %}
                         {% for key in redis_keys %}
