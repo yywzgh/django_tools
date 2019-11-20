@@ -7,10 +7,8 @@
         <style type="text/css">
              body {
                  padding-left: 3px;
+                 padding-top: 0px;
              }
-            form {
-                background-color: #D2E0E6;
-            }
             table {
                 background-color: lavender;
             }
@@ -32,7 +30,7 @@
     </head>
 
     <body>
-        <h1 >redis key (253)</h1>
+        <h1>redis key (253)</h1>
         <form id="redisForm" action="{% url 'queryKey' %}" method="post" class="form-inline">
             {% csrf_token %}
             <div class="form-group">
