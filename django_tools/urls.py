@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('queryKey/', views.query_key, name='queryKey'),
+    path('redis/', views.query_key, name='redis'),
     path('admin/', admin.site.urls),
 ]
