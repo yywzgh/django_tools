@@ -34,8 +34,11 @@ def query_key(request):
     if flag == "0" and param is not None:
         for keys in list_keys:
             redisconn.delete(keys)
-            message = "删除成功！"
-            list_keys = ['']
+        message = "删除成功！"
+        list_keys = ['']
+
+    if flag == "1" and len(list_keys) == 0:
+        message = "没有查询结果！"
 
     template = loader.get_template('index.html')
     context = {
