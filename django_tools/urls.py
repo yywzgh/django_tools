@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('redis/', views.query_key, name='redis'),
+    path('cleanUserCache/', views.clean_user_info, name='cleanUserCache'),
+    path('serverinfo/', views.server_info, name='serverinfo'),
     path('admin/', admin.site.urls),
+    url(r'^login/$', views.login),
 ]
