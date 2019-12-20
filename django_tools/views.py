@@ -41,7 +41,7 @@ def login(request):
     return render(request, 'login.html')
 
 
-@check_login
+#@check_login
 def index(request):
     #template = loader.get_template('index.html')
     #context = {
@@ -101,15 +101,12 @@ def clean_user_info(request):
         template = loader.get_template('user.html')
         return HttpResponse(template.render(context, request))
 
-    print(phone_number)
-    conn = pymysql.connect(host="10.25.16.253", user="root", port=3337, password="qazwsx123edc", database="jqd_test", charset="utf8")
-    if "uat" == flag:
-        conn = pymysql.connect(host="10.25.16.128", user="root", port=3336, password="qazwsx123edc",
-                               database="jqd_uat", charset="utf8")
-    if "pre" == flag:
-        conn = pymysql.connect(host="10.25.15.196", user="root", port=3336, password="qazwsx123edc",
-                               database="jqd_uat", charset="utf8")
+    mysql_dict = constant.Const.mysql_nodes_dict().get(env_type)
+
+    conn = pymysql.connect(**mysql_dict)
+
     cursor = conn.cursor()
+
     sql = "select user_id, user_name, phonenumber, sessionid, invite_code from sys_user where phonenumber=%s;"
     cursor.execute(sql, [phone_number])
     ret = cursor.fetchone()
@@ -126,9 +123,6 @@ def clean_user_info(request):
     phone_number = ret[2]
     session_id = ret[3]
     invite_code = ret[4]
-
-
-    print("flag" + flag)
 
     if flag == "0":
         redis_nodes = constant.Const.redis_nodes_dict().get(env_type)
@@ -155,7 +149,7 @@ def clean_user_info(request):
             redis_conn.delete(keys)
 
         message = "用户redis缓存删除成功！"
-        context = { 'message': message, }
+        context = {'message': message}
         template = loader.get_template('user.html')
         return HttpResponse(template.render(context, request))
 
@@ -174,7 +168,4 @@ def clean_user_info(request):
 
 def server_info(request):
     template = loader.get_template('server.html')
-    context = {
-        'redis_keys': [],
-    }
-    return HttpResponse(template.render(context, request))
+    return HttpResponse(template.render({}, request))

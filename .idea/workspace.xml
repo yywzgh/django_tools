@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aaf68db-d402-4397-9c76-3ff6be9a8d10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_tools/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_tools/migrations/0002_auto_20191206_1448.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/server.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_tools/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_tools/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_tools/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_tools/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/constant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_tools/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +126,9 @@
       <workItem from="1576209320087" duration="4086000" />
       <workItem from="1576659043492" duration="1533000" />
       <workItem from="1576662131619" duration="711000" />
-      <workItem from="1576735698672" duration="8496000" />
+      <workItem from="1576735698672" duration="11635000" />
+      <workItem from="1576832279736" duration="1061000" />
+      <workItem from="1576837562390" duration="2314000" />
     </task>
     <task id="LOCAL-00001" summary="change css style">
       <created>1574234667856</created>
@@ -179,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574392252141</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add clean user cache">
+      <created>1576748291655</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576748291655</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -213,33 +213,42 @@
     <MESSAGE value="add nav" />
     <MESSAGE value="add env select" />
     <MESSAGE value="add no result prompt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add no result prompt" />
+    <MESSAGE value="add clean user cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="add clean user cache" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576662236538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576662236538" />
-    <state width="1877" height="296" key="GridCell.Tab.0.bottom" timestamp="1576747514619">
+    <state x="598" y="116" key="CommitChangelistDialog2" timestamp="1576748289838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576747514619" />
-    <state width="1877" height="296" key="GridCell.Tab.0.center" timestamp="1576747514619">
+    <state x="598" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576748289838" />
+    <state width="1877" height="438" key="GridCell.Tab.0.bottom" timestamp="1576838623197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576747514619" />
-    <state width="1877" height="296" key="GridCell.Tab.0.left" timestamp="1576747514619">
+    <state width="1877" height="438" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576838623197" />
+    <state width="1877" height="438" key="GridCell.Tab.0.center" timestamp="1576838623196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576747514619" />
-    <state width="1877" height="296" key="GridCell.Tab.0.right" timestamp="1576747514619">
+    <state width="1877" height="438" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576838623196" />
+    <state width="1877" height="438" key="GridCell.Tab.0.left" timestamp="1576838623196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576747514619" />
-    <state x="668" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1576735700838">
+    <state width="1877" height="438" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576838623196" />
+    <state width="1877" height="438" key="GridCell.Tab.0.right" timestamp="1576838623197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576735700838" />
+    <state width="1877" height="438" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576838623197" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1576748294248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576748294248" />
+    <state x="668" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1576837564115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576837564115" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576745647199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

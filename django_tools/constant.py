@@ -20,3 +20,12 @@ class Const:
                             {'host': '10.25.15.213', 'port': 6379}, {'host': '10.25.15.213', 'port': 6380}
                               ],
     }
+
+
+    @staticmethod
+    def mysql_nodes_dict():
+
+        return {"test":{"host": "10.25.16.253", "user": "root", "port": 3337, "password": "qazwsx123edc", "database": "jqd_test","charset": "utf8"},
+                "uat":{"host": "10.25.16.128", "user": "root", "port": 3336, "password": "qazwsx123edc", "database": "jqd_test","charset": "utf8"},
+                "pre":{"host": "10.25.15.196", "user": "root", "port": 3336, "password": "qazwsx123edc", "database": "jqd_pre","charset": "utf8"},
+        }

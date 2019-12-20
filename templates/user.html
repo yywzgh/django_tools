@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>redis key操作</title>
+        <title>清理用户缓存</title>
         <link rel="stylesheet" href="/static/bootstrap-3.3.7/dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="/static/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css"/>
         <style>
@@ -46,8 +46,8 @@
                 <form id="redisForm" action="{% url 'cleanUserCache' %}" method="post" class="form-inline">
                     {% csrf_token %}
                     <div class="form-group">
-                        <label for="phoneNumber" style="margin-left: 10px">   请输入手机号:</label>
-                        <input type="input" id="phoneNumber" name="phoneNumber" class="form-control" value="{{ phone_number }}"/>
+                        <label for="phoneNumber" style="margin-left: 10px" class="required">   请输入手机号:</label>
+                        <input type="input" id="phoneNumber" name="phoneNumber" class="form-control" value="{{ phone_number }}" placeholder="手机号"/>
                         <input type="hidden" id="flag" name="flag" class="form-control" value="1"/>
                     </div>
                     <select name="envType" class="form-control">
@@ -63,7 +63,9 @@
             <div class="row">
                 <table class="table table-bordered" style="margin-top: 10px;">
                     <tr><td>用户ID</td><td>用户名</td><td>手机号</td><td>会话ID</td><td>邀请码</td></tr>
+                    {% if user_id %}
                     <tr><td>{{ user_id }}</td><td>{{ user_name }}</td><td>{{ phone_number }}</td><td>{{ session_id }}</td><td>{{ invite_code }}</td></tr>
+                    {% endif %}
                 </table>
             </div>
         </div>
