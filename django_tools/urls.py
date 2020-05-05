@@ -23,6 +23,7 @@ urlpatterns = [
     path('redis/', views.query_key, name='redis'),
     path('cleanUserCache/', views.clean_user_info, name='cleanUserCache'),
     path('serverinfo/', views.server_info, name='serverinfo'),
+    path('server_jc/', views.server_jc, name='server_jc'),
     path('admin/', admin.site.urls),
     url(r'^login/$', views.login),
 ]

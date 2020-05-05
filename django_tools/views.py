@@ -169,3 +169,8 @@ def clean_user_info(request):
 def server_info(request):
     template = loader.get_template('server.html')
     return HttpResponse(template.render({}, request))
+
+
+def server_jc(request):
+    template = loader.get_template('server_jc.html')
+    return HttpResponse(template.render({}, request))
