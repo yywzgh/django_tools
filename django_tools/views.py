@@ -55,20 +55,30 @@ def query_key(request):
 
     message = ""
     env_type = request.POST.get('envType')
-
+    param = request.POST.get('key')
+    flag = request.POST.get('flag')
     redis_nodes = []
+    list_keys = ['']
 
     if env_type is not None:
         redis_nodes = constant.Const.redis_nodes_dict().get(env_type)
     else:
         return HttpResponseRedirect('/')
 
-    redis_conn = RedisCluster(startup_nodes=redis_nodes)
-
-    param = request.POST.get('key')
-    flag = request.POST.get('flag')
-
-    list_keys = redis_conn.keys("*" + param + "*")
+    try:
+        redis_conn = RedisCluster(startup_nodes=redis_nodes, decode_responses=True)
+    except RedisClusterException:
+        message = "连接Redis服务失败！"
+        context = {
+            'redis_keys': list_keys,
+            'key': param,
+            'env_type': env_type,
+            'message': message
+        }
+        template = loader.get_template('index.html')
+        return HttpResponse(template.render(context, request))
+    else:
+        list_keys = redis_conn.keys("*" + param + "*")
 
     if flag == "0" and param is not None:
         for keys in list_keys:
