@@ -125,7 +125,7 @@ def clean_user_info(request):
     conn.close()
 
     if ret is None:
-        context = {'message': "用户不存在",}
+        context = {'message': "用户不存在"}
         template = loader.get_template('user.html')
         return HttpResponse(template.render(context, request))
 
