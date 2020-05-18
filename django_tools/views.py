@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.template import loader
 from rediscluster import RedisCluster
+from rediscluster.exceptions import RedisClusterException
 from functools import wraps
 from django.shortcuts import render
 from . import constant
@@ -66,7 +67,7 @@ def query_key(request):
         return HttpResponseRedirect('/')
 
     try:
-        redis_conn = RedisCluster(startup_nodes=redis_nodes, decode_responses=True)
+        redis_conn = RedisCluster(startup_nodes=redis_nodes, decode_responses=False)
     except RedisClusterException:
         message = "连接Redis服务失败！"
         context = {
