@@ -27,3 +27,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^login/$', views.login),
 ]
+
+handler404 = views.handle_404
+
+handler500 = views.handle_500
+

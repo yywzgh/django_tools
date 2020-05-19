@@ -42,6 +42,14 @@ def login(request):
     return render(request, 'login.html')
 
 
+def handle_404(request, exception):
+    return render(request, '404.html')
+
+
+def handle_500(request):
+    return render(request, '500.html')
+
+
 #@check_login
 def index(request):
     #template = loader.get_template('index.html')
