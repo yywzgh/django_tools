@@ -8,6 +8,8 @@ from django.shortcuts import render
 from . import constant
 from django_tools.models import UserInfo
 import pymysql
+import os
+import json
 
 
 def check_login(f):
@@ -58,6 +60,10 @@ def index(request):
     #}
     #return HttpResponse(template.render(context, request))
     return render(request, 'index.html')
+
+
+def head(request):
+    return render(request, 'head.html')
 
 
 def query_key(request):
@@ -193,3 +199,22 @@ def server_info(request):
 def server_jc(request):
     template = loader.get_template('server_jc.html')
     return HttpResponse(template.render({}, request))
+
+
+def upload_view(request):
+    return render(request, 'upload.html')
+
+def upload_file(request):
+    if request.method == "POST":
+        myFile = request.FILES.get("myfile", None)
+        print(myFile.name)
+        if not myFile:
+            result = {"msg": "请选择要上传的文件", "result": True}
+            return HttpResponse(json.dumps(result));
+        destination = open(os.path.join("c:\\tmp", myFile.name), '+wb');
+        for chunk in myFile.chunks():
+            destination.write(chunk)
+        destination.close()
+        result = {"msg": "上传成功", "result": True}
+        return HttpResponse(json.dumps(result))
+

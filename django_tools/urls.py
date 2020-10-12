@@ -20,10 +20,13 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('head/', views.head, name='head'),
     path('redis/', views.query_key, name='redis'),
     path('cleanUserCache/', views.clean_user_info, name='cleanUserCache'),
     path('serverinfo/', views.server_info, name='serverinfo'),
     path('server_jc/', views.server_jc, name='server_jc'),
+    path('upload/', views.upload_file, name='upload'),
+    path('uploadview/', views.upload_view, name='uploadview'),
     path('admin/', admin.site.urls),
     url(r'^login/$', views.login),
 ]
