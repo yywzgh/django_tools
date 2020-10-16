@@ -213,11 +213,12 @@ def upload_file(request):
         if not myFile:
             result = {"msg": "请选择要上传的文件", "result": True}
             return HttpResponse(json.dumps(result));
-        destination = open(os.path.join("/tmp/upload", myFile.name), '+wb');
+        destination = open(os.path.join("/tmp", myFile.name), '+wb');
         for chunk in myFile.chunks():
             destination.write(chunk)
         destination.close()
-
+        os.system("rm -rf /tmp/data/*")
+        os.system("unzip /tmp/nginx-1.18.0.zip -d /tmp/data/")
         result = {"msg": "上传成功", "result": True}
         return HttpResponse(json.dumps(result))
 
