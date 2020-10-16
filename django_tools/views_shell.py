@@ -11,6 +11,7 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
 
+
 def exec_shell(request):
     # 创建一个ssh的客户端，用来连接服务器
     ssh = paramiko.SSHClient()
@@ -36,12 +37,11 @@ def exec_shell(request):
     print(stdout.read().decode())
     ssh.close()
 
-
     template = loader.get_template('shell.html')
 
     context = {
         'redis_keys': "",
         'key': "",
-        'message' : ""
+        'message': ""
     }
     return HttpResponse(template.render(context, request))

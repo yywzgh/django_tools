@@ -10,6 +10,7 @@ from django_tools.models import UserInfo
 import pymysql
 import os
 import json
+import paramiko
 
 
 def check_login(f):
@@ -204,6 +205,7 @@ def server_jc(request):
 def upload_view(request):
     return render(request, 'upload.html')
 
+
 def upload_file(request):
     if request.method == "POST":
         myFile = request.FILES.get("myfile", None)
@@ -211,10 +213,35 @@ def upload_file(request):
         if not myFile:
             result = {"msg": "请选择要上传的文件", "result": True}
             return HttpResponse(json.dumps(result));
-        destination = open(os.path.join("c:\\tmp", myFile.name), '+wb');
+        destination = open(os.path.join("/tmp/upload", myFile.name), '+wb');
         for chunk in myFile.chunks():
             destination.write(chunk)
         destination.close()
+
         result = {"msg": "上传成功", "result": True}
         return HttpResponse(json.dumps(result))
 
+
+def exec_shell():
+    ssh = paramiko.SSHClient()
+    # 创建一个ssh的白名单
+    know_host = paramiko.AutoAddPolicy()
+    # 加载创建的白名单
+    ssh.set_missing_host_key_policy(know_host)
+
+    # 连接服务器
+    ssh.connect(
+        hostname="10.10.21.177",
+        port=22,
+        username="root",
+        password="123"
+    )
+
+    # 执行命令
+    stdin, stdout, stderr = ssh.exec_command("rm -rf /root/Desktop/mv")
+    # stdin  标准格式的输入，是一个写权限的文件对象
+    # stdout 标准格式的输出，是一个读权限的文件对象
+    # stderr 标准格式的错误，是一个写权限的文件对象
+
+    print(stdout.read().decode())
+    ssh.close()
