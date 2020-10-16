@@ -1,0 +1,1 @@
+docker run -dt --name django_tools  -p 8030:8000  yywzgh/django:tools
