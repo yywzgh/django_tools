@@ -2,114 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aaf68db-d402-4397-9c76-3ff6be9a8d10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.github/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.github/FUNDING.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.github/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.github/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.github/stale.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/CHANGE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/css/fileinput-rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/css/fileinput-rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/css/fileinput.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/css/fileinput.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/examples/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/img/loading-sm.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/fileinput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/fileinput.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/LANG.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/cr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/kr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/kz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/sr-latn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/uz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/locales/zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/plugins/piexif.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/plugins/piexif.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/plugins/sortable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/js/plugins/sortable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/nuget/Package.nuspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/nuget/build.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/scss/fileinput-rtl.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/scss/fileinput.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/scss/themes/explorer-fa/theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/scss/themes/explorer-fas/theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/scss/themes/explorer/theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fa/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fa/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fa/theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fa/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fas/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fas/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fas/theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer-fas/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer/theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/explorer/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/fa/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/fa/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/fas/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/fas/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/gly/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap-fileinput/themes/gly/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/server.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/server_jc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/django_tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_tools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_tools/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_tools/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_tools/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +120,9 @@
       <workItem from="1576735698672" duration="11635000" />
       <workItem from="1576832279736" duration="1061000" />
       <workItem from="1576837562390" duration="2314000" />
-      <workItem from="1602484502559" duration="10054000" />
+      <workItem from="1602484502559" duration="11214000" />
+      <workItem from="1602552152576" duration="4788000" />
+      <workItem from="1602812380058" duration="9141000" />
     </task>
     <task id="LOCAL-00001" summary="change css style">
       <created>1574234667856</created>
@@ -277,7 +173,49 @@
       <option name="project" value="LOCAL" />
       <updated>1576748291655</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add clean user cache">
+      <created>1602818409279</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602818409279</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add Dockerfile">
+      <created>1602818932663</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602818932663</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add Dockerfile">
+      <created>1602820001860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602820001860</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add Dockerfile">
+      <created>1602820074231</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602820074231</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add Dockerfile">
+      <created>1602820630906</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602820630906</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add unzip function">
+      <created>1602832098973</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602832098973</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -305,19 +243,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="change css style" />
     <MESSAGE value="add nav" />
     <MESSAGE value="add env select" />
     <MESSAGE value="add no result prompt" />
     <MESSAGE value="add clean user cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="add clean user cache" />
+    <MESSAGE value="add Dockerfile" />
+    <MESSAGE value="add unzip function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add unzip function" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="265" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602487160412">
+    <state x="265" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602817034580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="265" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602487160412" />
+    <state x="265" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602817034580" />
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1602832098598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602832098598" />
     <state width="602" height="466" key="DebuggerActiveHint" timestamp="1602491532901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -326,41 +271,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="833" y="414" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602485285143" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1602493802940">
+    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602493802940" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1602493802940">
+    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602493802940" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1602493802940">
+    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602493802940" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1602493802940">
+    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602493802940" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1602491547111">
+    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491547111" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1602491547111">
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491547111" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1602491547111">
+    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491547111" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1602491547111">
+    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491547111" />
-    <state x="553" y="231" key="SettingsEditor" timestamp="1602485906467">
+    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state x="553" y="231" key="SettingsEditor" timestamp="1602814472086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="231" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602485906467" />
+    <state x="553" y="231" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602814472086" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602832545704">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602832545704" />
   </component>
 </project>
