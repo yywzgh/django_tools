@@ -6,4 +6,4 @@ copy ./MyWeb ./myweb
 
 WORKDIR myweb/
 
-ENTRYPOINT python manage.py runserver
+ENTRYPOINT python3 manage.py runserver
