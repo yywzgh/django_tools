@@ -17,6 +17,7 @@ import xlwt
 from xlutils.copy import copy
 from django.http import StreamingHttpResponse
 
+
 def check_login(f):
     @wraps(f)
     def inner(request, *arg, **kwargs):
