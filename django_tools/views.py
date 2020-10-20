@@ -295,9 +295,9 @@ def read_excel(filename):
     for a in range(sheet.nrows):  #循环读取表格内容（每次读取一行数据）
         if a > 0:
             cells = sheet.row_values(a)  # 每行数据赋值给cells
-            data=cells[1]#因为表内可能存在多列数据，0代表第一列数据，1代表第二列，以此类推
-            print(tbopen + parse.quote(data))
-            dat.append(tbopen + parse.quote(data)) #把每次循环读取的数据插入到list
+            data = cells[1]#因为表内可能存在多列数据，0代表第一列数据，1代表第二列，以此类推
+            print(tbopen + parse.quote(data, safe='%'))
+            dat.append(tbopen + parse.quote(data, safe='%')) #把每次循环读取的数据插入到list
     total = len(dat)
     return dat
 

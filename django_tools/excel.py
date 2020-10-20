@@ -1,38 +1,15 @@
 # -*- coding: utf-8 -*-
 
 import xlrd
+from urllib import parse
 #from MyPlatform.settings import MEDIA_ROOT
 
 
-class ExcelImport:
-    def __init__(self, file_name, version):
-        # self.file_name = unicode(file_name, "utf-8")
-        # 文件路径修改
-        self.file_name = (MEDIA_ROOT + str(file_name)).replace("/", "\\").decode("utf-8")
-        # print self.file_name
-        self.workbook = xlrd.open_workbook(self.file_name)
-        self.table = self.workbook.sheets()[0]
-        # 获取总行数
-        self.nrows = self.table.nrows
+jsRet = 'http://s.click.taobao.com/t?e=m%3D2%26s%3DD5dGgd8bT25w4vFB6t2Z2iperVdZeJvif3ovRFFLMflyINtkUhsv0LnWnKbpSZF5jwT44o8Tf6Q1kicPeK1VfNjcxFgfK5XAhiGWfQvWc46uGOCInnh7loqjIreHZUHg4GfJKEjEJwJzpYkv2aBXViXzcHOJQm%2FHpDKCesgY1gXkwRZR8lHBs2sswmt1oPC%2FA8hgolRGHkczuTGl041QAqC1%2Fwjn0aaPtY4Qt2cZ1lXd4efXitbU8JFcSFnFSJXmsFMnFeqO8gZ5yNE9MYfEdhbJpX7Mxr0b1lzoPAOG4AQEimWme%2FPK7hoyN1WIKpbdxg5p7bh%2BFbQ%3D&union_lens=lensId%3APUB%401603091652%400b521d61_1428_1753fb5614c_398a%4001&direct_sale=1'
+# print(parse.unquote(jsRet))  # 输出：中国
 
-        # 版本号
-        self.version = version
+tbopen = "tbopen://m.taobao.com/tbopen/index.html?action=ali.open.nav&module=h5&h5Url="
 
-        self.cases = []
+print(parse.quote(jsRet))  # 输出：True
 
-    def get_cases(self):
-        # 从第二行开始
-        for x in range(1, self.nrows):
-            row = self.table.row_values(x)
-            self.cases.append(
-                {
-                    "case_class": row[3],
-                    "name": row[4],
-                    "code": row[0],
-                    "level": row[5],
-                    "condition": row[6],
-                    "step": row[7],
-                    "expected_result": row[9],
-                    "version": self.version
-                }
-            )
+print(parse.quote(jsRet, safe='%'))  # 输出：True
