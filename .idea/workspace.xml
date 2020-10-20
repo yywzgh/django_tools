@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aaf68db-d402-4397-9c76-3ff6be9a8d10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_tools/excel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/upload_excel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/new-template.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/new-weibo_1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/weibo_1.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_tools/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_tools/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_tools/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/head.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +60,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/upload" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git\django_tools\upload" />
       <recent name="C:\git\django_tools\templates" />
       <recent name="C:\git\django_tools\static" />
       <recent name="C:\Users\Administrator\PycharmProjects\django_tools\templates" />
@@ -123,6 +131,9 @@
       <workItem from="1602484502559" duration="11214000" />
       <workItem from="1602552152576" duration="4788000" />
       <workItem from="1602812380058" duration="9141000" />
+      <workItem from="1602832739747" duration="5403000" />
+      <workItem from="1603103786736" duration="3735000" />
+      <workItem from="1603157453494" duration="13582000" />
     </task>
     <task id="LOCAL-00001" summary="change css style">
       <created>1574234667856</created>
@@ -215,17 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1602832098973</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add unzip function">
+      <created>1602832761975</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602832761975</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -259,10 +268,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="265" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602817034580" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1602832098598">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1602832761007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602832098598" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602832761007" />
     <state width="602" height="466" key="DebuggerActiveHint" timestamp="1602491532901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,22 +280,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="833" y="414" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602485285143" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1602496477109">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603178224280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1602496477109">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603178224280" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603178224280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1602496477109">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603178224280" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603178224279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1602496477109">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603178224279" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603178224280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602496477109" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603178224280" />
     <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1602496477109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -307,9 +316,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="553" y="231" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602814472086" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602832545704">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602832770378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602832545704" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602832770378" />
   </component>
 </project>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap-3.3.7/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap-3.3.7/dist/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap-fileinput/css/fileinput.css"/>
+    <script src="/static/js/jquery-3.4.1.js"></script>
+    <script src="/static/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/static/bootstrap-fileinput/js/locales/zh.js"></script>
+    <script src="/static/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="head"></div>
+
+    <div class="row">
+        <form  id="upload_form" action="{% url 'uploadExcel' %}" method="POST" enctype="multipart/form-data"  class="form-inline">
+            <button class="btn btn-info" type="button" onclick="downloadModel()">模板下载</button>
+            <div class="form-group">
+                <input id="upload" type="file" name="myfile" id="filename"/>
+            </div>
+            <button class="btn" type="button" onclick="uploadExcel()">上传</button>
+            <button id="downloadBtn" class="btn" type="button" onclick="downloadExcel()" disabled>下载</button>
+            <span id="msg" class="label label-warning"></span>
+        </form>
+    </div>
+    <div class="row" style="padding-top: 20px ">
+        <span id="msg" class="label label-primary">注意：只支持xls后缀名的excel处理,先上传后下载</span>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $("#head").load("/head");
+
+    function uploadExcel() {
+            var fileInput = $('#upload').get(0).files[0];
+            console.info(fileInput);
+            if (fileInput) {
+                //$("#upload_form").submit();
+            } else {
+                alert("请选择上传文件！");
+            }
+            var data = new FormData();
+            data.append('myfile', fileInput);
+            $.ajax({
+                type: 'POST',
+                url: "/uploadExcel/",
+                data: data,
+                cache: false,
+                processData: false,
+                contentType: false,
+                success: function (ret) {
+                    $('#downloadBtn').removeAttr("disabled");
+                    $('#msg').text("上传成功！")
+                }
+            });
+    }
+
+function downloadExcel() {
+        var filename = $('#upload').get(0).files[0].name;
+        var url = '/downloadExcel/'+filename;
+        window.location.href = url;
+}
+
+function downloadModel() {
+        var url = '/downloadExcel/template.xls'
+        window.location.href = url;
+}
+
+</script>
+</body>
+</html>

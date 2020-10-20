@@ -20,6 +20,9 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('downloadExcel/<str:filename>/', views.download_excel, name='downloadExcel'),
+    path('uploadExcel/', views.upload_excel, name='uploadExcel'),
+    path('uploadExcelView/', views.upload_excel_view, name='uploadExcelView'),
     path('head/', views.head, name='head'),
     path('redis/', views.query_key, name='redis'),
     path('cleanUserCache/', views.clean_user_info, name='cleanUserCache'),
